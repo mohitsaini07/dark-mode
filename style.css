@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgba(216, 218, 218, 0.963);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 1rem;
+  background: rgb(195, 195, 195);
+}
+
+nav .right {
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+nav .right ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.8rem;
+  list-style: none;
+  text-transform: uppercase;
+  margin-right: 6rem;
+}
+
+nav .right a {
+  text-decoration: none;
+  color: rgb(123, 123, 123);
+  transition: all 0.2s;
+}
+
+nav .right a:hover {
+  color: rgb(222, 95, 4);
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 90%, 0 100%);
+}
+
+.hero_content {
+  font-family: "Josefin Sans", sans-serif;
+  margin-left: 5rem;
+}
+
+.hero_content span {
+  font-size: 4rem;
+  color: rgb(255, 109, 5);
+}
+
+.hero_content h1 {
+  margin-bottom: 1rem;
+}
+
+.hero_content p {
+  font-size: 0.9rem;
+  color: #626262;
+  margin-bottom: 2rem;
+}
+
+.hero_content a {
+  text-decoration: none;
+  background: rgb(255, 102, 0);
+  padding: 0.8rem 1rem;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+}
+
+.hero_content a:hover {
+  color: orange;
+  background-color: antiquewhite;
+}
+
+.hero_image {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  right: 0;
+}
+
+.hero_image img {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.hero_image:hover .bg_img {
+  bottom: 2.5rem;
+}
+
+.hero_image:hover .front_img {
+  left: 54%;
+}
+
+/* For dark mode */
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode nav {
+  background-color: #333;
+}
+
+.dark-mode nav .right a {
+  color: #eee;
+}
+
+.dark-mode .hero_content span {
+  color: #ff6d05;
+}
+
+.dark-mode .hero_content a {
+  background-color: #ff6600;
+}
+
+.dark-mode .hero_content a:hover {
+  color: orange;
+  background-color: antiquewhite;
+}
+
+.darkMode img {
+  width: 25px;
+  height: auto;
+  cursor: pointer;
+}
+
+.darkMode input {
+  display: none;
+}
