@@ -143,6 +143,9 @@ nav .right a:hover {
   height: auto;
   cursor: pointer;
 }
+.darkMode img:hover {
+  opacity: 0.5;
+}
 
 .darkMode input {
   display: none;
